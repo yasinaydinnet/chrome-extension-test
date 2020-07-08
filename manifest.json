@@ -1,0 +1,15 @@
+{
+  "name": "Getting Started Example",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "content_scripts": [{
+    "matches": [
+      "*://netflix.com/*",
+      "*://www.netflix.com/*"
+    ],
+    "all_frames": true,
+    "js": ["content_script.js"],
+    "run_at": "document_idle"
+  }],
+  "manifest_version": 2
+}
